@@ -1,43 +1,48 @@
 {% set name = "robotframework-jupyterlibrary" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 63bb7bd94bb21fbd6f88a640b605d51728bc48a1a9aebbe27ee033c218a5aa03
+  sha256: d1d7096aed257c9ca8f9ab888e5a2721085e149214d180153a3fa19017ec6f3f
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
-    - python  >=3.6
     - pip
+    - python >=3.6
   run:
-    - python  >=3.6
-    - robotframework
-    - robotframework-seleniumlibrary
-    - pillow
-    - six
+    - ipython
+    - python >=3.6
+    - robotframework >=3.2
+    - robotframework-seleniumlibrary >=4.5
 
 test:
+  requires:
+    - pip
   imports:
     - JupyterLibrary
+  commands:
+    - pip check
 
 about:
-  home: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary
+  home: https://github.com/robots-from-jupyter/{{ name }}
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A Robot Framework library for testing Jupyter end-user applications and extensions'
-  doc_url: https://robotframework-jupyterlibrary.readthedocs.io
-  dev_url: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary
+  summary: A Robot Framework library for testing Jupyter end-user applications and extensions
+  doc_url: https://{{ name }}.readthedocs.io
+  dev_url: https://github.com/robots-from-jupyter/{{ name }}
+  doc_source_url: https://github.com/robots-from-jupyter/{{ name }}/tree/master/docs
 
 extra:
   recipe-maintainers:
     - martinRenou
+    - bollwyvl
