@@ -19,9 +19,10 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - ipython
     - python >=3.6
-    - robotframework
-    - robotframework-seleniumlibrary
+    - robotframework >=3.2
+    - robotframework-seleniumlibrary >=4.5
 
 test:
   requires:
