@@ -1,7 +1,7 @@
 About robotframework-jupyterlibrary
 ===================================
 
-Home: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary
+Home: https://github.com/robots-from-jupyter/
 
 Package license: BSD-3-Clause
 
@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/robotframework-
 
 Summary: A Robot Framework library for testing Jupyter end-user applications and extensions
 
-Development: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary
+Development: https://github.com/robots-from-jupyter/
 
-Documentation: https://robotframework-jupyterlibrary.readthedocs.io
+Documentation: https://.readthedocs.io
 
 Current build status
 ====================
@@ -59,7 +59,8 @@ conda search robotframework-jupyterlibrary --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
