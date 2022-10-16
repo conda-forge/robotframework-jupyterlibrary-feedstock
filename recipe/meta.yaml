@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: robotframework-jupyterlibrary
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/robotframework-jupyterlibrary/robotframework-jupyterlibrary-{{ version }}.tar.gz
-  sha256: 15b90dd2501dd76624851003ab819679470af1db82da389df933be2f2cb9eae8
+  sha256: 0a20a810980ee6211897efa5528da438567d60d560e6421a173599373ce2714f
 
 build:
   noarch: python
@@ -16,9 +16,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - python >=3.6
+    - python >=3.7
     - robotframework >=3.2
     - robotframework-seleniumlibrary >=4.5
 
