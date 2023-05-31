@@ -1,11 +1,11 @@
-About robotframework-jupyterlibrary
-===================================
+About robotframework-jupyterlibrary-feedstock
+=============================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/robotframework-jupyterlibrary-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/robotframework-jupyterlibrary-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Robot Framework library for testing Jupyter end-user applications and extensions
 
