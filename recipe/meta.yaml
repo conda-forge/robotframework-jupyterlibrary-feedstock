@@ -1,25 +1,26 @@
-{% set version = "0.4.2" %}
+{% set version = "0.5.0a0" %}
 
 package:
   name: robotframework-jupyterlibrary
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/r/robotframework-jupyterlibrary/robotframework-jupyterlibrary-{{ version }}.tar.gz
-  sha256: 238bb98293249694a1b28d5bc8ebe930a38bfde42222fba0a80475f33b00571f
+  url:  https://pypi.io/packages/source/r/robotframework-jupyterlibrary/robotframework-jupyterlibrary-{{ version }}.tar.gz
+  sha256: 18276fec2ce9484c1fda925eb04620237cc5725a718099b0ca408cd4c45f7e15
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv --no-deps
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
+    - flit >=3.9,<4
   run:
-    - python >=3.7
-    - robotframework >=4
+    - python >=3.8
+    - robotframework >=5
     - robotframework-seleniumlibrary >=4.5
 
 test:
@@ -38,9 +39,4 @@ about:
   summary: A Robot Framework library for testing Jupyter end-user applications and extensions
   doc_url: https://robotframework-jupyterlibrary.readthedocs.io
   dev_url: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary
-  doc_source_url: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary/tree/v{{ version }}/docs
-
-extra:
-  recipe-maintainers:
-    - martinRenou
-    - bollwyvl
+  doc_source_url: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary/tree/main/docs
