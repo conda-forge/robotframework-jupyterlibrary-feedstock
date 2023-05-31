@@ -39,4 +39,9 @@ about:
   summary: A Robot Framework library for testing Jupyter end-user applications and extensions
   doc_url: https://robotframework-jupyterlibrary.readthedocs.io
   dev_url: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary
-  doc_source_url: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary/tree/main/docs
+  doc_source_url: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary/tree/v{{ version }}/docs
+
+extra:
+  recipe-maintainers:
+    - martinRenou
+    - bollwyvl
