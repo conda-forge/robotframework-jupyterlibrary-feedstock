@@ -5,8 +5,8 @@ package:
   version: {{ version }}
 
 source:
-  url:  https://pypi.io/packages/source/r/robotframework-jupyterlibrary/robotframework-jupyterlibrary-{{ version }}.tar.gz
-  sha256: 18276fec2ce9484c1fda925eb04620237cc5725a718099b0ca408cd4c45f7e15
+  url:  https://pypi.io/packages/source/r/robotframework-jupyterlibrary/robotframework_jupyterlibrary-{{ version }}.tar.gz
+  sha256: 33115cf4a11947632e355d5cd767f22f2a42dea11df3ce0ae62f2c82ed30dab1
 
 build:
   noarch: python
@@ -38,7 +38,6 @@ about:
   license_file: LICENSE
   summary: A Robot Framework library for testing Jupyter end-user applications and extensions
   doc_url: https://robotframework-jupyterlibrary.readthedocs.io
-  dev_url: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary
   doc_source_url: https://github.com/robots-from-jupyter/robotframework-jupyterlibrary/tree/v{{ version }}/docs
 
 extra:
