@@ -10,22 +10,23 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - flit >=3.9,<4
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - robotframework >=5
     - robotframework-seleniumlibrary >=4.5
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - JupyterLibrary
   commands:
